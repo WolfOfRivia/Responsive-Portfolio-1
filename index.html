@@ -80,14 +80,14 @@
   <section id="projects" class="projects">
     <h1>Recent Projects</h1>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium mollitia saepe ipsam similique iste.</p>
-    <menu class="project__categories">
-      <button class="btn active">All</button>
-      <button class="btn">Frontend</button>
-      <button class="btn">Backend</button>
-      <button class="btn">Fullstack</button>
+    <menu class="projects__categories">
+      <button class="btn primary" data-filter="*">All</button>
+      <button class="btn" data-filter=".frontend">Frontend</button>
+      <button class="btn" data-filter=".backend">Backend</button>
+      <button class="btn" data-filter=".fullstack">Fullstack</button>
     </menu>
-    <div class="container project__container">
-      <article class="project">
+    <div class="container projects__container">
+      <article class="project mix fullstack" data-order="1">
         <div class="project__image">
           <img src="./assets/project1.jpg" alt="Project One">
         </div>
@@ -98,18 +98,18 @@
           <a href="https://github.com/egattor" class="btn" target="_blank"><i class="uil uil-github"></i></a>
         </div>
       </article>
-      <article class="project">
+      <article class="project mix frontend" data-order="2">
         <div class="project__image">
           <img src="./assets/project2.jpg" alt="Project Two">
         </div>
-        <h5>Project Two Title (Fullstack)</h5>
+        <h5>Project Two Title (Frontend)</h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione qui veniam.</p>
         <div class="project__cta">
           <a href="https://dummyegator.com" class="btn primary" target="_blank"><i class="uil uil-link"></i></a>
           <a href="https://github.com/egattor" class="btn" target="_blank"><i class="uil uil-github"></i></a>
         </div>
       </article>
-      <article class="project">
+      <article class="project mix fullstack" data-order="3">
         <div class="project__image">
           <img src="./assets/project3.jpg" alt="Project Three">
         </div>
@@ -120,7 +120,7 @@
           <a href="https://github.com/egattor" class="btn" target="_blank"><i class="uil uil-github"></i></a>
         </div>
       </article>
-      <article class="project">
+      <article class="project mix frontend" data-order="4">
         <div class="project__image">
           <img src="./assets/project4.jpg" alt="Project Four">
         </div>
@@ -131,7 +131,7 @@
           <a href="https://github.com/egattor" class="btn" target="_blank"><i class="uil uil-github"></i></a>
         </div>
       </article>
-      <article class="project">
+      <article class="project mix frontend" data-order="5">
         <div class="project__image">
           <img src="./assets/project5.jpg" alt="Project Five">
         </div>
@@ -142,7 +142,7 @@
           <a href="https://github.com/egattor" class="btn" target="_blank"><i class="uil uil-github"></i></a>
         </div>
       </article>
-      <article class="project">
+      <article class="project mix backend" data-order="6">
         <div class="project__image">
           <img src="./assets/project6.jpg" alt="Project Six">
         </div>
@@ -157,6 +157,7 @@
   </section>
   <!-- END PROJECTS -->
 
+  <script src="./mix/dist/mixitup.min.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

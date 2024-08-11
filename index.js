@@ -180,3 +180,13 @@ aboutBtn.addEventListener('click', () => {
 
 // SET EXP CONTENT TO DEFAULT CONTENT ON RESUME RIGHT AS PAGE LOADS
 resumeRight.innerHTML = expContent;
+
+// MIX IT UP JS FOR THE PROJECT SECTION
+const containerEl = document.querySelector('.projects__container');
+let mixer = mixitup(containerEl, {
+  animation: {
+    enable: false
+  }
+})
+
+mixer.filter('*');
